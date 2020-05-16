@@ -20,7 +20,7 @@ Warning: The plane sweep algorithm is sensitive to rounding errors. For large pr
 * [SciPy](https://www.scipy.org)
 * [NumPy](https://numpy.org)
 * [matplotlab](https://matplotlib.org)
-* [MATLAB](https://www.mathworks.com/products/matlab.html) for post-processing only.
+* [MATLAB](https://www.mathworks.com/products/matlab.html) (for post-processing only)
 
 ## Reference
 J Huang, KJ Bathe. Overlapping finite element meshes in AMORE. <em>Advances in Engineering Software</em> 2020, 144:102791. [[journal]](https://doi.org/10.1016/j.advengsoft.2020.102791)
