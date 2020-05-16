@@ -7,7 +7,7 @@ python3 femMain.py
 SimpleOFE3
 ```
 
-## Problems
+## Numerical Examples
 
 Two example problems are given:
 * `SimpleOFE3`: A patch test problem using three meshes.
