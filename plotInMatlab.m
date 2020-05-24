@@ -1,9 +1,4 @@
 %% Read data from the Python outputs.
-fid=fopen('SampleData.txt');
-data = textscan(fid, '%f %f %f', 'CommentStyle','#', 'CollectOutput',true);
-fclose(fid);
-totalData=cell2mat(data);
-
 fid=fopen('nSampling.txt');
 data = textscan(fid, '%d', 'CommentStyle','#', 'CollectOutput',true);
 fclose(fid);
@@ -21,7 +16,17 @@ bCoord=cell2mat(data);
 
 nSampling=numbers(1); nComponent=numbers(2);
 
-clear data
+a = '%f ';
+for i = 1:nSampling-2 % Assume nSampling is at least 2.
+    a = [a,'%f '];
+end
+a = [a,'%f'];
+fid=fopen('SampleData.txt');
+data = textscan(fid, a, 'CommentStyle','#', 'CollectOutput',true);
+fclose(fid);
+totalData=cell2mat(data);
+
+clear data a
 
 %% Now we can start plotting figures.
 run ADINAColor
