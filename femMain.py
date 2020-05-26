@@ -63,6 +63,13 @@ if __name__=="__main__":
             print("FE solver costs %s seconds in total."%(time.time()-startTime))
             writeSolution.writeDisplacement(displacement,energy,inputFileName)
 
+        elif parameters[0]==3:
+            # ICM FE (for squares)
+            print("Using incompatible finite elements.")
+            displacement,energy=traditionalElement.ICMFE(inputData)
+            print("FE solver costs %s seconds in total."%(time.time()-startTime))
+            writeSolution.writeDisplacement(displacement,energy,inputFileName)
+
         else:
             raise ValueError("Wrong element type!")
     else:
