@@ -161,7 +161,7 @@ def lowerOrderFE(inputData):
     return displacement,energy
 
 def quadraticFE(inputData):
-    """The solver for lower order finite elements (9-node quads & 6-node triangles)."""
+    """The solver for second order finite elements (9-node quads & 6-node triangles)."""
     startTime=time.time()
 
     parameters=inputData[0]
