@@ -46,7 +46,7 @@ def quadFE(coord,Dmat):
     
     return Kloc
 
-def ICMFE(coord,Dmat):
+def ICMFE(coord,Dmat): # For square elements
     nInt=2 # 2 quadrature points in each direction.
 
     (pos,wei)=numericalIntegration.gaussQuad(nInt)
