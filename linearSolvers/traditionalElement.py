@@ -139,6 +139,7 @@ def lowerOrderFE(inputData):
     startTime=time.time()
     
     Kglo=Kglo.tocsc()
+    print("Number of non-zero sparse matrix entries = %s."%Kglo.count_nonzero())
 
     # factor=cholesky(Kglo)
     # disp=factor(fglo)
