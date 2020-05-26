@@ -55,7 +55,7 @@ def shapeICMFE(coord,r,s):
     dNmat=np.array([[-0.25*(1.0-s),0.25*(1.0-s),0.25*(1.0+s),-0.25*(1.0+s)],\
         [-0.25*(1.0-r),-0.25*(1.0+r),0.25*(1.0+r),0.25*(1.0-r)]])
 
-    dGmat=np.array([[-2.0*r,0.0],[0.0,-2.0*s]])
+    dGmat=np.array([[-2.0*r,0.0],[0.0,-2.0*s]]) # No modification because we assume the element is a square.
 
     J=np.matmul(dNmat,coord)
     Jacobian=np.linalg.det(J)
