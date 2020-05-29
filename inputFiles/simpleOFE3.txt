@@ -73,9 +73,9 @@
 # Constrained nodes
 # constrained node, constrain x, constrain y, ux, uy, normal direction, constrain type
 3 #Number of constrained nodes
-0 1 1 0 0
-6 1 0 0 0
-21 1 0 0 0
+0 1 0 0 0
+6 1 1 0 0
+21 1 1 0 0
 
 # Boundary tractions
 0 0 #The first is the indBody; the second is the indBoundary
